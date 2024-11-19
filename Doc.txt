@@ -1,0 +1,38 @@
+Introduction:
+
+The Phonebook Management System is a C++ program that allows users to manage their contacts effectively. It provides functionalities to add, search, delete, and display contacts in a phonebook. Each contact includes the person's name, phone number, date of birth, anniversary, and contact group. The program uses a stack data structure to store contacts, enabling efficient management and retrieval of data.
+
+Abstract:
+
+The Phonebook Management System is designed to help users maintain a list of contacts with various details, such as name, phone number, date of birth, anniversary, and contact group. The system utilizes a stack to store and manage contact data efficiently. Users can perform operations like adding new contacts, searching for specific contacts, deleting contacts, and displaying the entire contact list.
+
+Functions:
+
+Adding a Contact:
+The addContact function allows users to add a new contact to the phonebook. When the user selects option 1 from the menu, they are prompted to enter the contact's name, phone number, date of birth, anniversary, and contact group. Before adding the contact, the function checks the validity of the phone number, ensuring that it has exactly 10 digits. If the phone number is valid, a new Contact object is created with the provided details, and the contact is pushed onto the stack of contacts. This ensures that the latest contact is placed at the top of the stack, making it the first contact to be displayed when the contacts are listed.
+
+Searching a Contact by Name:
+The searchContact function allows users to search for a contact by name. If the user selects option 2 from the menu, they are prompted to enter the name of the contact they want to find. The function then performs a case-insensitive search, converting both the search query and the contact names to lowercase using the transform function. This ensures that the search is not affected by the letter case. The function iterates through the stack of contacts and compares the contact names with the search name. If a match is found, the details of the contact are displayed, including the name, phone number, date of birth, anniversary, and contact group.
+
+Searching a Contact by Name and Phone Number:
+The searchContact function also allows users to search for a contact by both name and phone number. If the user selects option 3 from the menu, they are prompted to enter the name and phone number of the contact they want to find. The function then searches for a match by comparing both the name and phone number with the contacts in the stack. If a contact with matching name and phone number is found, its details are displayed.
+
+Deleting a Contact:
+The deleteContact function allows users to delete a contact from the phonebook. When the user selects option 4 from the menu, they are prompted to enter the name of the contact they want to delete. The function then iterates through the stack of contacts and removes the matching contact from the stack. This ensures that the deleted contact is no longer displayed when the contacts are listed.
+
+Displaying Contacts:
+The displayContacts function displays all the contacts stored in the phonebook. When the user selects option 5 from the menu, the function iterates through the stack of contacts and prints the details of each contact using the displayContact private function. The contacts are displayed in the order they were added, with the latest contact appearing at the top of the list.
+
+Private Function to Display a Contact:
+The displayContact function is a private function that is used to display the details of a single contact. It takes a Contact object as input and prints its name, phone number, date of birth, anniversary, and contact group. This function is called by the displayContacts function to display the details of each contact in the phonebook.
+
+Usage:
+
+The Phonebook Management System is user-friendly and interactive. When the program is run, the user is presented with a menu of options to manage their contacts. Each option corresponds to a specific operation, such as adding, searching, deleting, or displaying contacts. The user can choose the desired option by entering the corresponding number.
+
+TODO:
+
+While the Phonebook Management System provides essential functionalities for managing contacts, it can be further enhanced and customized to meet specific requirements. For example, users can add features like contact sorting, reminders for important dates (e.g., birthdays, anniversaries), and the ability to group contacts for easier management. Additionally, users can implement data validation to ensure that all required fields are filled correctly when adding or updating contacts. The system can also be extended to support additional contact information, such as email addresses, addresses, or notes.
+
+GUNA SHANKAR S
+20MIA1162
